@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Contacts</title>
+  </head>
+  <body>
+    <h3>Contacts</h3>
+    <p><strong>phone number: </strong>+351 965 405 735</p>
+    <p><strong>email: </strong>alexandremiguelcardoso@gmail.com</p>
+    <p><strong>adress: </strong>rua de macau, coimbra, portugal</p>
+  <hr>
+    <form action="mailto:alexandremiguelcardoso@gmail.com" method="post" enctype="text/plain">
+      <!-- o atributo 'action' define o que acontece quanto o botão 'submit' é carregado. se o valor for "index.html" o utilizador é redireccionado para a homepage.
+      O atributo 'method="post" significa que os elementos que o utilizador preencha são transferidos para o email designado em no elemento 'action'
+      Já o atributo enctype definido para text/plain ajuda a tornar legível o conteúdo encaminhado para o email designado -->
+      <label>Your name: </label>
+      <input type="text" name="yourName" value=""><br>
+      <br>
+      <label>Your email: </label>
+      <input type="email" name="yourEmail" value=""><br>
+      <br>
+      <label>Your message: </label><br>
+      <textarea name="yourMessage" rows="10" cols="100"></textarea>
+      <!-- introdução de um elemento 'textarea' que não é um 'input type'. vem com a definição dimensional de altura e largura
+      as designações "yourName"; "yourEmail"; "yourMessage" servem para legendar os conteúdos submetidos quando remetidos para o email designado -->
+      <br>
+      <input type="submit">
+    </form>
+  </body>
+</html>
